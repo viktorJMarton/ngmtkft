@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="none">
+  <title>NGM-t Kft. logó</title>
+  <circle cx="320" cy="320" r="298" stroke="#fff" stroke-width="14" />
+  <g stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M320 108v424M108 320h424M170 170l300 300M170 470l300-300" />
+    <path d="m276 140 44 40 44-40m-88 360 44-40 44 40M140 276l40 44-40 44m360-88-40 44 40 44" />
+    <path d="M162 222h60v-60m196 0v60h60M162 418h60v60m196 0v-60h60" />
+  </g>
+</svg>

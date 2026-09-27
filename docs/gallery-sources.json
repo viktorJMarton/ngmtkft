@@ -1,0 +1,142 @@
+{
+  "lakossagi": [
+    {
+      "path": "public/images/lakossagi/06.jpg",
+      "title": "Családi ház",
+      "driveFileId": "1-Olq9W_gj2t9k9zdG_yYPJmYzIE-_Ozc",
+      "originalName": "Messenger_creation_9CC5BC5A-0F08-435F-970D-D63A9F744414_edit_148935256321101.jpg"
+    },
+    {
+      "path": "public/images/lakossagi/01.jpg",
+      "title": "Társasházi megoldás",
+      "driveFileId": "1NPZ4w41hcOGEmGs9VH-AW1qa6WnJOh6p",
+      "originalName": "Messenger_creation_11026ABE-95F1-47A2-BE76-B7AEB6F283C3.jpeg"
+    },
+    {
+      "path": "public/images/lakossagi/04.jpg",
+      "title": "Beltéri komfort",
+      "driveFileId": "1YRoiq76Qlh4zMy9vTz_PZIRsrj4YMiKQ",
+      "originalName": "Messenger_creation_D96C7648-42DA-456F-9C62-930A70AF0335.jpeg"
+    },
+    {
+      "path": "public/images/lakossagi/02.jpg",
+      "title": "Tetőtéri telepítés",
+      "driveFileId": "1K9KuGApARrmTf-upYFGfLclpXrXsQGGH",
+      "originalName": "Messenger_creation_54F1A0AD-7067-4AD3-A3DF-29B3A3662A96.jpeg"
+    },
+    {
+      "path": "public/images/lakossagi/03.jpg",
+      "title": "Homlokzati telepítés",
+      "driveFileId": "1TLK5O4Cz_DG2gUgCBsl1MXZ6bPeg0_Wa",
+      "originalName": "Messenger_creation_C6DF223C-C4FD-4390-95F1-4C18A8B06A0F.jpeg"
+    },
+    {
+      "path": "public/images/lakossagi/05.jpg",
+      "title": "Erkélyre szerelt klíma",
+      "driveFileId": "1PWIBLPb8Rrfe-QYWnkdwU8d1cScRXXwT",
+      "originalName": "Messenger_creation_DE2FF3A8-B560-4A83-B837-731D2D05A57A.jpeg"
+    }
+  ],
+  "kozintezmenyek": [
+    {
+      "path": "public/images/kozintezmenyek/05.jpg",
+      "title": "Klíma közösségi térben",
+      "driveFileId": "1eUNoNB3jiCnzMp9CzXRhxMFTFCVkwHth",
+      "originalName": "Messenger_creation_CD277E70-23AF-4A69-A546-FAB50EA08B79.jpeg"
+    },
+    {
+      "path": "public/images/kozintezmenyek/01.jpg",
+      "title": "Beltéri telepítés",
+      "driveFileId": "1WdExlxmyQdC2M-LizstMF-x-giRpiz_s",
+      "originalName": "Messenger_creation_2D227DCA-22F5-49A9-86B2-4AE090CED8A7.jpeg"
+    },
+    {
+      "path": "public/images/kozintezmenyek/02.jpg",
+      "title": "Komfort a mindennapi munkához",
+      "driveFileId": "1etYLMACFLfasS6to63NQudsWi15XI3ME",
+      "originalName": "Messenger_creation_60C9293C-BB9E-4546-B1DC-61D696FEA749.jpeg"
+    },
+    {
+      "path": "public/images/kozintezmenyek/03.jpg",
+      "title": "Kültéri elhelyezés",
+      "driveFileId": "1qzRhXwvGbyvrIKZCnnDYle1ElWVjYCfe",
+      "originalName": "Messenger_creation_72FE5021-EA21-4162-AEC0-AFD543774113.jpeg"
+    },
+    {
+      "path": "public/images/kozintezmenyek/04.jpg",
+      "title": "Telepítés folyamatban",
+      "driveFileId": "1x5CEEbEhhGl-LkBtwKWPXlj6GbZJxpv7",
+      "originalName": "Messenger_creation_A71344A1-A126-469B-81AA-511B6D9177A4.jpeg"
+    },
+    {
+      "path": "public/images/kozintezmenyek/06.jpg",
+      "title": "Szerelés közben",
+      "driveFileId": "1yeyZ6DS1PrG5R1xq0SDbLnO3IoY5cfwA",
+      "originalName": "Messenger_creation_5CBE9F95-50B3-40F9-90FB-83DE466D2B0E.jpeg"
+    }
+  ],
+  "ipari": [
+    {
+      "path": "public/images/ipari/04.jpg",
+      "title": "Mennyezeti klímatechnika",
+      "driveFileId": "1zLbMZzbztmiEzbl8x1Afm8I1gqvIIVAZ",
+      "originalName": "Messenger_creation_EFB51113-48DE-48DD-A7AA-53FC91A21513.jpeg"
+    },
+    {
+      "path": "public/images/ipari/03.jpg",
+      "title": "Kazettás klímaegység",
+      "driveFileId": "1arnwNjjDFw7LK7fQoqh9o8dsnqN2X4gn",
+      "originalName": "Messenger_creation_CDD0718B-6CB5-40F7-958F-354F98CA5A72.jpeg"
+    },
+    {
+      "path": "public/images/ipari/01.jpg",
+      "title": "Kültéri műszaki megoldás",
+      "driveFileId": "1Hts_NTF0sIQEsak65s87cMlaFanDzG6s",
+      "originalName": "Messenger_creation_3B703F1D-37E3-45E0-9BC2-53A561683293.jpeg"
+    },
+    {
+      "path": "public/images/ipari/02.jpg",
+      "title": "Nagyobb léptékű belső tér",
+      "driveFileId": "1sWlrlY_hJjI2-U12SPMVv4--Ci5EJ3mU",
+      "originalName": "Messenger_creation_783E8A00-CD2B-4E77-A1AA-664A1E409179.jpeg"
+    }
+  ],
+  "uzlet": [
+    {
+      "path": "public/images/uzlet/03.jpg",
+      "title": "Klímák és segédanyagok",
+      "driveFileId": "1NPPFsfvRtYbvfpQaJ71EPvjvhH_f9hGy",
+      "originalName": "Messenger_creation_9FBF8E0A-98F6-4D0B-9E3A-6AA081936D6E.jpeg"
+    },
+    {
+      "path": "public/images/uzlet/02.jpg",
+      "title": "Beltéri klímák a bemutatótérben",
+      "driveFileId": "1QyKyKOwbdXkaD4g5k-llD2Vz0WH6FHSZ",
+      "originalName": "Messenger_creation_C36BAE56-4F3D-4BA5-B7A3-4BA11CAA2FC9.jpeg"
+    },
+    {
+      "path": "public/images/uzlet/04.jpg",
+      "title": "Klímamegoldások egy helyen",
+      "driveFileId": "1vMXygunDcapSotyBoSqypHMgObf8liUU",
+      "originalName": "Messenger_creation_D634B99C-BA65-484D-8612-69CCBFC9CB88.jpeg"
+    },
+    {
+      "path": "public/images/uzlet/05.jpg",
+      "title": "Berendezések és szerelési anyagok",
+      "driveFileId": "1g0vXP5cWnpQ2q3nYWRrYQt0q4elYqt-9",
+      "originalName": "Messenger_creation_FAAABAC3-B24F-417F-8C07-90AFFE259471.jpeg"
+    },
+    {
+      "path": "public/images/uzlet/01.jpg",
+      "title": "Szakmai találkozó",
+      "driveFileId": "1dobZMo9epm09wyzlqexCXTz4csrpjZ_f",
+      "originalName": "Messenger_creation_AF1CB773-8AFE-481B-84F4-A6B6E7BA2423.jpeg"
+    },
+    {
+      "path": "public/images/uzlet/06.jpg",
+      "title": "Klímatechnika közelről",
+      "driveFileId": "1726oN8hCd-C4pcUQHCSBATngkjCtisVV",
+      "originalName": "Messenger_creation_C550D769-DD0D-4436-93FE-A042678E50B3.jpeg"
+    }
+  ]
+}

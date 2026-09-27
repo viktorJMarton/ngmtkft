@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="hu" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#102b3c" />
+    <meta name="description" content="NGM-t Kft. – Lakossági és ipari klímatelepítés, villanyszerelés Komárom-Esztergom megyében és környékén. Klímák és szerelési segédanyagok kis- és nagykereskedelme Tatabányán." />
+    <title>NGM-t Kft. | Klímatelepítés, villanyszerelés és kereskedelem</title>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#tartalom">Ugrás a tartalomra</a>
+    <header class="border-b border-slate-200 bg-white">
+      <div class="container-site flex h-20 items-center justify-between gap-5">
+        <a href="#kezdolap" class="flex shrink-0 items-center gap-3" aria-label="NGM-t Kft. – kezdőlap">
+          <span class="grid size-11 place-items-center rounded-xl bg-[#102b3c] text-white" aria-hidden="true">
+            <img src="./images/ngmt-logo.svg" alt="" width="34" height="34" />
+          </span>
+          <span class="text-[1.03rem] font-extrabold tracking-tight text-[#102b3c]">NGM-T KFT</span>
+        </a>
+        <nav class="hidden items-center gap-8 md:flex" aria-label="Főmenü">
+          <a class="nav-link" href="#szolgaltatasok">Szolgáltatások</a>
+          <a class="nav-link" href="#referenciak">Referenciák</a>
+          <a class="nav-link" href="#rolunk">Munkamenet</a>
+          <a class="btn rounded-full border-0 bg-[#102b3c] px-6 text-white hover:bg-[#20526b]" href="#kapcsolat">Kapcsolat</a>
+        </nav>
+        <button id="menu-toggle" class="btn btn-ghost btn-square md:hidden" type="button" aria-label="Menü megnyitása" aria-controls="mobile-menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+      <nav id="mobile-menu" class="container-site pb-5 md:hidden" aria-label="Mobil főmenü" hidden>
+        <div class="flex flex-col gap-1 border-t border-slate-200 pt-3">
+          <a class="nav-link rounded-lg px-3 py-3" href="#szolgaltatasok">Szolgáltatások</a>
+          <a class="nav-link rounded-lg px-3 py-3" href="#referenciak">Referenciák</a>
+          <a class="nav-link rounded-lg px-3 py-3" href="#rolunk">Munkamenet</a>
+          <a class="nav-link rounded-lg px-3 py-3" href="#kapcsolat">Kapcsolat</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="tartalom" tabindex="-1">
+      <section id="kezdolap" class="bg-[#f3f7f8] pt-12 pb-2 md:pt-20 md:pb-3">
+        <div class="container-site hero-layout grid items-center gap-10 md:gap-14">
+          <div>
+            <p class="eyebrow mb-5">Klímatechnika · Villanyszerelés · Kereskedelem</p>
+            <h1 class="hero-title font-bold text-[#102b3c]">
+              <span class="sr-only">Klímatelepítés és villanyszerelés.</span>
+              <span class="hero-title-intro" aria-hidden="true">
+                <span class="hero-intro-climate">Klímatelepítés</span>
+                <span class="hero-intro-electric">villanyszerelés.</span>
+              </span>
+              <span class="hero-title-final" aria-hidden="true">
+                <span class="hero-title-top">Klímatelepítés és</span>
+                <span class="hero-title-bottom">villanyszerelés.</span>
+              </span>
+            </h1>
+            <p class="mt-7 max-w-lg text-[1.05rem] leading-relaxed text-slate-600">Lakossági és ipari klímák telepítése, villanyszerelés, valamint klímák és szerelési segédanyagok kis- és nagykereskedelme egy helyen.</p>
+            <p class="mt-4 font-semibold text-[#102b3c]">
+              <a class="location-link" href="https://www.google.com/maps/search/?api=1&amp;query=2800%20Tatab%C3%A1nya%2C%20B%C3%BAzavir%C3%A1g%20utca%208." target="_blank" rel="noopener noreferrer" aria-label="NGM-t Kft., 2800 Tatabánya, Búzavirág u. 8. – megnyitás Google Mapsen, új lapon">
+                <svg class="shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                <span>NGM-t Kft. · 2800 Tatabánya, Búzavirág u. 8.</span>
+              </a>
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a class="btn h-12 rounded-full border-0 bg-[#102b3c] px-7 text-white hover:bg-[#20526b]" href="#kapcsolat">Kapcsolatfelvétel <span aria-hidden="true">↗</span></a>
+              <a class="btn btn-outline h-12 rounded-full border-slate-300 px-7 text-[#102b3c] hover:bg-white hover:text-[#102b3c]" href="#szolgaltatasok">Szolgáltatásaink</a>
+            </div>
+          </div>
+          <div id="hero-gallery" class="relative" role="region" aria-roledescription="képkörhinta" aria-label="Klímaszerelési munkafotók">
+            <div id="hero-carousel" class="carousel hero-carousel w-full shadow-xl shadow-slate-900/10" aria-label="Automatikusan váltakozó munkafotók">
+              <div class="carousel-item relative w-full" role="group" aria-roledescription="dia" aria-label="1 / 3">
+                <img class="photo hero-photo" src="./images/klimatelepites-emelokosarral.jpg" alt="Klímaszerelési munkák emelőkosárral egy társasház homlokzatán" width="1536" height="2048" fetchpriority="high" />
+                <div class="hero-caption absolute rounded-xl bg-white/95 shadow-lg backdrop-blur-sm">
+                  <p class="text-lg font-bold text-[#102b3c]">Klímatelepítés nagyobb léptékben</p>
+                  <p class="mt-2 text-sm leading-relaxed text-slate-600">Társasházi megoldások, az épület adottságaihoz igazított telepítéssel.</p>
+                </div>
+              </div>
+              <div class="carousel-item relative w-full" role="group" aria-roledescription="dia" aria-label="2 / 3">
+                <img class="photo hero-photo hero-photo-tools" src="./images/klimaszereles-szerszam.jpg" alt="Klímaszerelő szerszám és szigetelt cső munka közben" width="1536" height="2048" loading="lazy" decoding="async" />
+                <div class="hero-caption absolute rounded-xl bg-white/95 shadow-lg backdrop-blur-sm">
+                  <p class="text-lg font-bold text-[#102b3c]">Precíz kivitelezés, biztos alapok</p>
+                  <p class="mt-2 text-sm leading-relaxed text-slate-600">Átgondolt csővezetés és gondosan kialakított csatlakozások – a műszaki részletekre is figyelünk.</p>
+                </div>
+              </div>
+              <div class="carousel-item relative w-full" role="group" aria-roledescription="dia" aria-label="3 / 3">
+                <img class="photo hero-photo hero-photo-balcony" src="./images/klima-erkely.jpg" alt="Erkély falára szerelt kültéri klímaegység, háttérben kék ég és lakóépületek" width="1536" height="2048" loading="lazy" decoding="async" />
+                <div class="hero-caption absolute rounded-xl bg-white/95 shadow-lg backdrop-blur-sm">
+                  <p class="text-lg font-bold text-[#102b3c]">Komfort az Ön otthonában</p>
+                  <p class="mt-2 text-sm leading-relaxed text-slate-600">Kellemesebb mindennapok, az otthonához és igényeihez illeszkedő klímamegoldással.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="partner-strip mt-10 md:mt-14" aria-label="Partnereink márkái">
+        <div class="partner-track">
+          <div class="partner-group">
+            <img src="./images/partners/midea.svg" alt="Midea" width="240" height="100" loading="lazy" decoding="async" />
+            <img src="./images/partners/fisher.svg" alt="Fisher" width="240" height="100" loading="lazy" decoding="async" />
+            <img src="./images/partners/aux-logo.svg" alt="AUX" width="240" height="100" loading="lazy" decoding="async" />
+            <img src="./images/partners/azuri.svg" alt="Azuri" width="240" height="100" loading="lazy" decoding="async" />
+            <img src="./images/partners/hisense.svg" alt="Hisense" width="240" height="100" loading="lazy" decoding="async" />
+            <img src="./images/partners/fujitsu.svg" alt="Fujitsu" width="240" height="100" loading="lazy" decoding="async" />
+            <img src="./images/partners/daikin.svg" alt="DAIKIN" width="240" height="100" loading="lazy" decoding="async" />
+            <img src="./images/partners/gree.svg" alt="GREE" width="240" height="100" loading="lazy" decoding="async" />
+            <img src="./images/partners/polar.svg" alt="Polar" width="240" height="100" loading="lazy" decoding="async" />
+          </div>
+          <div class="partner-group" aria-hidden="true">
+            <img src="./images/partners/midea.svg" alt="" width="240" height="100" loading="lazy" decoding="async" />
+            <img src="./images/partners/fisher.svg" alt="" width="240" height="100" loading="lazy" decoding="async" />
+            <img src="./images/partners/aux-logo.svg" alt="" width="240" height="100" loading="lazy" decoding="async" />
+            <img src="./images/partners/azuri.svg" alt="" width="240" height="100" loading="lazy" decoding="async" />
+            <img src="./images/partners/hisense.svg" alt="" width="240" height="100" loading="lazy" decoding="async" />
+            <img src="./images/partners/fujitsu.svg" alt="" width="240" height="100" loading="lazy" decoding="async" />
+            <img src="./images/partners/daikin.svg" alt="" width="240" height="100" loading="lazy" decoding="async" />
+            <img src="./images/partners/gree.svg" alt="" width="240" height="100" loading="lazy" decoding="async" />
+            <img src="./images/partners/polar.svg" alt="" width="240" height="100" loading="lazy" decoding="async" />
+          </div>
+        </div>
+        </section>
+      </section>
+
+      <section id="szolgaltatasok" class="py-20 md:py-28">
+        <div class="container-site">
+          <p class="eyebrow mb-4">Amivel foglalkozunk</p>
+          <div class="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+            <h2 class="section-title max-w-[650px]">Műszaki megoldások az igényfelméréstől a megvalósításig.</h2>
+            <p class="services-intro max-w-sm leading-relaxed text-slate-600 italic">Lakossági és üzleti megrendelők, valamint viszonteladó partnerek részére.</p>
+          </div>
+          <div class="service-grid grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            <article class="card card-border service-card"><div class="card-body"><span class="service-number">01 / LAKOSSÁGI</span><h3 class="card-title mt-7 text-xl font-bold">Otthoni klímatelepítés</h3><p class="mt-3 leading-relaxed text-slate-600">Klímaberendezések elhelyezése és szakszerű telepítése lakásokba, családi házakba.</p></div></article>
+            <article class="card card-border service-card"><div class="card-body"><span class="service-number">02 / IPARI</span><h3 class="card-title mt-7 text-xl font-bold">Ipari klímatechnika</h3><p class="mt-3 leading-relaxed text-slate-600">Nagyobb terek és üzleti létesítmények klímatechnikai kivitelezése az adott feladathoz igazítva.</p></div></article>
+            <article class="card card-border service-card"><div class="card-body"><span class="service-number">03 / ELEKTROMOS</span><h3 class="card-title mt-7 text-xl font-bold">Villanyszerelés</h3><p class="mt-3 leading-relaxed text-slate-600">A telepítésekhez és egyéb műszaki igényekhez kapcsolódó villanyszerelési munkák.</p></div></article>
+            <article class="card card-border service-card"><div class="card-body"><span class="service-number">04 / KERESKEDELEM</span><h3 class="card-title mt-7 text-xl font-bold">Kis- és nagykereskedelem</h3><p class="mt-3 leading-relaxed text-slate-600">Klímaberendezések és szerelési segédanyagok beszerzése ügyfelek és szakmai partnerek számára.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="referenciak" class="reference-section" aria-labelledby="lakossagi-heading">
+        <div class="container-site reference-layout">
+          <div class="reference-copy">
+            <p class="eyebrow mb-4">Munkáink · Lakossági</p>
+            <h2 id="lakossagi-heading" class="section-title">Komfort az otthon minden szegletében.</h2>
+            <p class="mt-5 leading-relaxed text-slate-600">Lakások, családi házak és társasházak klímatelepítése. A beltéri és kültéri egységek helyét az otthon adottságaihoz és a használati igényekhez igazítjuk.</p>
+          </div>
+          <div class="reference-gallery">
+          <figure class="project-card" data-work-gallery aria-label="Lakossági képgaléria">
+            <div class="relative">
+              <div id="lakossagi-carousel" class="carousel work-carousel w-full" tabindex="0" aria-label="Lakossági: 6 kép, lapozás a bal és jobb nyílbillentyűvel">
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="1 / 6" data-title="Családi ház" data-description="Kültéri klímaegység elhelyezése">
+                  <img class="photo" src="./images/lakossagi/06.jpg" alt="Kültéri klímaegység egy családi ház barna homlokzatán, az eresz alatt" width="1600" height="1317" style="object-position: center 20%;" loading="lazy" decoding="async" />
+                </div>
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="2 / 6" data-title="Társasházi megoldás" data-description="Kültéri egység az emeleti homlokzaton">
+                  <img class="photo" src="./images/lakossagi/01.jpg" alt="Kültéri klímaegység egy világoskék lakóépület emeleti erkélye mellett" width="1536" height="2048" style="object-position: center 20%;" loading="lazy" decoding="async" />
+                </div>
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="3 / 6" data-title="Beltéri komfort" data-description="Klímaegység elhelyezése lakásban">
+                  <img class="photo" src="./images/lakossagi/04.jpg" alt="Beltéri klímaegység egy felújítás alatt álló lakás fehér falán" width="1536" height="2048" style="object-position: center 0%;" loading="lazy" decoding="async" />
+                </div>
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="4 / 6" data-title="Tetőtéri telepítés" data-description="Kültéri egység szerelése a tetőn">
+                  <img class="photo" src="./images/lakossagi/02.jpg" alt="Családi ház cseréptetőjén elhelyezett kültéri klímaegység, létrával és szerelővel" width="1536" height="2048" style="object-position: center 25%;" loading="lazy" decoding="async" />
+                </div>
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="5 / 6" data-title="Homlokzati telepítés" data-description="Az épülethez illeszkedő elhelyezés">
+                  <img class="photo" src="./images/lakossagi/03.jpg" alt="Midea kültéri klímaegység egy világos homlokzat mélyedésében" width="2048" height="1536" style="object-position: center 50%;" loading="lazy" decoding="async" />
+                </div>
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="6 / 6" data-title="Erkélyre szerelt klíma" data-description="Kültéri egység a lakás közelében">
+                  <img class="photo" src="./images/lakossagi/05.jpg" alt="Kültéri klímaegység egy erkély falán, háttérben lakóépületekkel és kék éggel" width="1536" height="2048" style="object-position: center 0%;" loading="lazy" decoding="async" />
+                </div>
+              </div>
+              <div data-work-controls class="pointer-events-none absolute top-1/2 right-3 left-3 hidden -translate-y-1/2 items-center justify-between">
+                <button data-work-prev class="btn btn-circle pointer-events-auto size-11 border-0 bg-white/95 text-[#102b3c] hover:bg-white" type="button" aria-label="Lakossági: előző kép" aria-controls="lakossagi-carousel" disabled><span aria-hidden="true">❮</span></button>
+                <button data-work-next class="btn btn-circle pointer-events-auto size-11 border-0 bg-white/95 text-[#102b3c] hover:bg-white" type="button" aria-label="Lakossági: következő kép" aria-controls="lakossagi-carousel"><span aria-hidden="true">❯</span></button>
+              </div>
+            </div>
+            <figcaption><p data-work-title class="font-bold">Családi ház</p><p data-work-description class="mt-1 text-sm text-slate-600">Kültéri klímaegység elhelyezése</p></figcaption>
+          </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="referenciak-kozintezmenyek" class="reference-section" aria-labelledby="kozintezmenyek-heading">
+        <div class="container-site reference-layout is-reversed">
+          <div class="reference-copy">
+            <p class="eyebrow mb-4">Munkáink · Közintézmények</p>
+            <h2 id="kozintezmenyek-heading" class="section-title">Átgondolt megoldások közösségi terekbe.</h2>
+            <p class="mt-5 leading-relaxed text-slate-600">Közintézményi helyszíneknél a helyiségek használata és az épület műszaki adottságai adják az egyeztetés alapját. Klímatechnikai és villanyszerelési igényeivel keressen bennünket.</p>
+          </div>
+          <div class="reference-gallery">
+          <figure class="project-card" data-work-gallery aria-label="Közintézmények képgaléria">
+            <div class="relative">
+              <div id="kozintezmenyek-carousel" class="carousel work-carousel w-full" tabindex="0" aria-label="Közintézmények: 6 kép, lapozás a bal és jobb nyílbillentyűvel">
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="1 / 6" data-title="Klíma közösségi térben" data-description="Beltéri egység nagyobb helyiségben">
+                  <img class="photo" src="./images/kozintezmenyek/05.jpg" alt="Beltéri klímaegység egy zöld szőnyeges, bordásfalakkal felszerelt sportteremben" width="2048" height="1536" style="object-position: center 50%;" loading="lazy" decoding="async" />
+                </div>
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="2 / 6" data-title="Beltéri telepítés" data-description="Klímamegoldás közintézményi helyiségben">
+                  <img class="photo" src="./images/kozintezmenyek/01.jpg" alt="Beltéri klímaegység ablak mellett, asztallal és székkel berendezett közintézményi helyiségben" width="1536" height="2048" style="object-position: center 20%;" loading="lazy" decoding="async" />
+                </div>
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="3 / 6" data-title="Komfort a mindennapi munkához" data-description="Beltéri egység irodai környezetben">
+                  <img class="photo" src="./images/kozintezmenyek/02.jpg" alt="Beltéri klímaegység egy iroda falán, alatta írótáblával és íróasztallal" width="1536" height="2048" style="object-position: center 20%;" loading="lazy" decoding="async" />
+                </div>
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="4 / 6" data-title="Kültéri elhelyezés" data-description="Klímaegység az intézmény homlokzatán">
+                  <img class="photo" src="./images/kozintezmenyek/03.jpg" alt="Kültéri klímaegység egy kétszintes intézményi épület világos homlokzatán" width="1536" height="2048" style="object-position: center 25%;" loading="lazy" decoding="async" />
+                </div>
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="5 / 6" data-title="Telepítés folyamatban" data-description="Kültéri egység szerelése">
+                  <img class="photo" src="./images/kozintezmenyek/04.jpg" alt="Kültéri klímaegység intézményi épület homlokzatán, létrával és szerelési eszközökkel" width="1536" height="2048" style="object-position: center 30%;" loading="lazy" decoding="async" />
+                </div>
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="6 / 6" data-title="Szerelés közben" data-description="Épületen belüli műszaki kivitelezés">
+                  <img class="photo" src="./images/kozintezmenyek/06.jpg" alt="Szerelő létrán dolgozik egy sportterem falán, a beltéri klíma tartólemeze mellett" width="2048" height="1536" style="object-position: center 50%;" loading="lazy" decoding="async" />
+                </div>
+              </div>
+              <div data-work-controls class="pointer-events-none absolute top-1/2 right-3 left-3 hidden -translate-y-1/2 items-center justify-between">
+                <button data-work-prev class="btn btn-circle pointer-events-auto size-11 border-0 bg-white/95 text-[#102b3c] hover:bg-white" type="button" aria-label="Közintézmények: előző kép" aria-controls="kozintezmenyek-carousel" disabled><span aria-hidden="true">❮</span></button>
+                <button data-work-next class="btn btn-circle pointer-events-auto size-11 border-0 bg-white/95 text-[#102b3c] hover:bg-white" type="button" aria-label="Közintézmények: következő kép" aria-controls="kozintezmenyek-carousel"><span aria-hidden="true">❯</span></button>
+              </div>
+            </div>
+            <figcaption><p data-work-title class="font-bold">Klíma közösségi térben</p><p data-work-description class="mt-1 text-sm text-slate-600">Beltéri egység nagyobb helyiségben</p></figcaption>
+          </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="referenciak-ipari" class="reference-section" aria-labelledby="ipari-heading">
+        <div class="container-site reference-layout">
+          <div class="reference-copy">
+            <p class="eyebrow mb-4">Munkáink · Ipari</p>
+            <h2 id="ipari-heading" class="section-title">Műszaki megoldások nagyobb léptékben.</h2>
+            <p class="mt-5 leading-relaxed text-slate-600">Nagyobb terek és ipari létesítmények klímatechnikai kivitelezése. A műszaki egyeztetéstől a telepítésig az adott feladathoz igazítjuk a megoldást.</p>
+          </div>
+          <div class="reference-gallery">
+          <figure class="project-card" data-work-gallery aria-label="Ipari képgaléria">
+            <div class="relative">
+              <div id="ipari-carousel" class="carousel work-carousel w-full" tabindex="0" aria-label="Ipari: 4 kép, lapozás a bal és jobb nyílbillentyűvel">
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="1 / 4" data-title="Mennyezeti klímatechnika" data-description="Műszaki munkák nagyobb belső térben">
+                  <img class="photo" src="./images/ipari/04.jpg" alt="Mennyezeti kazettás klímaegységek szerelése nagyobb helyiségben, létrával és védőtasakokkal" width="2048" height="1536" style="object-position: center 50%;" loading="lazy" decoding="async" />
+                </div>
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="2 / 4" data-title="Kazettás klímaegység" data-description="Mennyezetbe illesztett megoldás">
+                  <img class="photo" src="./images/ipari/03.jpg" alt="Mennyezeti kazettás klímaegység egy rozsdamentes berendezésekkel felszerelt konyhában" width="1536" height="2048" style="object-position: center 20%;" loading="lazy" decoding="async" />
+                </div>
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="3 / 4" data-title="Kültéri műszaki megoldás" data-description="Klímaegység elhelyezése az épület mellett">
+                  <img class="photo" src="./images/ipari/01.jpg" alt="Kültéri klímaegység egy nagy üvegablakokkal rendelkező épület falánál" width="1536" height="2048" style="object-position: center 65%;" loading="lazy" decoding="async" />
+                </div>
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="4 / 4" data-title="Nagyobb léptékű belső tér" data-description="Mennyezeti berendezés szerelése">
+                  <img class="photo" src="./images/ipari/02.jpg" alt="Szerelő dolgozik egy nagyobb klímatechnikai bemutatótér mennyezeti berendezésén" width="1536" height="2048" style="object-position: center 55%;" loading="lazy" decoding="async" />
+                </div>
+              </div>
+              <div data-work-controls class="pointer-events-none absolute top-1/2 right-3 left-3 hidden -translate-y-1/2 items-center justify-between">
+                <button data-work-prev class="btn btn-circle pointer-events-auto size-11 border-0 bg-white/95 text-[#102b3c] hover:bg-white" type="button" aria-label="Ipari: előző kép" aria-controls="ipari-carousel" disabled><span aria-hidden="true">❮</span></button>
+                <button data-work-next class="btn btn-circle pointer-events-auto size-11 border-0 bg-white/95 text-[#102b3c] hover:bg-white" type="button" aria-label="Ipari: következő kép" aria-controls="ipari-carousel"><span aria-hidden="true">❯</span></button>
+              </div>
+            </div>
+            <figcaption><p data-work-title class="font-bold">Mennyezeti klímatechnika</p><p data-work-description class="mt-1 text-sm text-slate-600">Műszaki munkák nagyobb belső térben</p></figcaption>
+          </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="referenciak-uzlet" class="reference-section" aria-labelledby="uzlet-heading">
+        <div class="container-site reference-layout is-reversed">
+          <div class="reference-copy">
+            <p class="eyebrow mb-4">Üzlet és bemutatótér</p>
+            <h2 id="uzlet-heading" class="section-title">Klímák és segédanyagok egy helyen.</h2>
+            <p class="mt-5 leading-relaxed text-slate-600">Klímaberendezések és szerelési segédanyagok kis- és nagykereskedelme Tatabányán. Lakossági vásárlók és szakmai partnerek részére is egyeztetjük a beszerzési igényeket.</p>
+          </div>
+          <div class="reference-gallery">
+          <figure class="project-card" data-work-gallery aria-label="Üzlet és bemutatótér képgaléria">
+            <div class="relative">
+              <div id="uzlet-carousel" class="carousel work-carousel w-full" tabindex="0" aria-label="Üzlet és bemutatótér: 6 kép, lapozás a bal és jobb nyílbillentyűvel">
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="1 / 6" data-title="Klímák és segédanyagok" data-description="Kínálatunk a tatabányai üzletben">
+                  <img class="photo" src="./images/uzlet/03.jpg" alt="Klímaberendezések, kartondobozok és szerelési segédanyagok az üzlet bemutatóterében" width="1536" height="2048" style="object-position: center 55%;" loading="lazy" decoding="async" />
+                </div>
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="2 / 6" data-title="Beltéri klímák a bemutatótérben" data-description="Fisher berendezések">
+                  <img class="photo" src="./images/uzlet/02.jpg" alt="Beltéri klímaegységek a bemutatóterem kék, Fisher feliratú falán" width="1536" height="2048" style="object-position: center 30%;" loading="lazy" decoding="async" />
+                </div>
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="3 / 6" data-title="Klímamegoldások egy helyen" data-description="Midea bemutatótér">
+                  <img class="photo" src="./images/uzlet/04.jpg" alt="Beltéri klímaegységek és bemutatóállványok az üzlet Midea feliratú kék fala mellett" width="1536" height="2048" style="object-position: center 50%;" loading="lazy" decoding="async" />
+                </div>
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="4 / 6" data-title="Berendezések és szerelési anyagok" data-description="Hisense klímák és csőtekercsek">
+                  <img class="photo" src="./images/uzlet/05.jpg" alt="Hisense beltéri egységek egy bemutatóállványon, előttük csőtekercsekkel" width="1536" height="2048" style="object-position: center 60%;" loading="lazy" decoding="async" />
+                </div>
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="5 / 6" data-title="Szakmai találkozó" data-description="Klímatechnikai bemutató">
+                  <img class="photo" src="./images/uzlet/01.jpg" alt="Résztvevők egy kék sátor alatt tartott szabadtéri klímatechnikai bemutatón" width="1536" height="2048" style="object-position: center 50%;" loading="lazy" decoding="async" />
+                </div>
+                <div class="carousel-item w-full" role="group" aria-roledescription="dia" aria-label="6 / 6" data-title="Klímatechnika közelről" data-description="Szabadtéri szakmai bemutató">
+                  <img class="photo" src="./images/uzlet/06.jpg" alt="Résztvevők egy Midea bemutatóautó mellett, kiállított klímaberendezésekkel" width="1536" height="2048" style="object-position: center 40%;" loading="lazy" decoding="async" />
+                </div>
+              </div>
+              <div data-work-controls class="pointer-events-none absolute top-1/2 right-3 left-3 hidden -translate-y-1/2 items-center justify-between">
+                <button data-work-prev class="btn btn-circle pointer-events-auto size-11 border-0 bg-white/95 text-[#102b3c] hover:bg-white" type="button" aria-label="Üzlet és bemutatótér: előző kép" aria-controls="uzlet-carousel" disabled><span aria-hidden="true">❮</span></button>
+                <button data-work-next class="btn btn-circle pointer-events-auto size-11 border-0 bg-white/95 text-[#102b3c] hover:bg-white" type="button" aria-label="Üzlet és bemutatótér: következő kép" aria-controls="uzlet-carousel"><span aria-hidden="true">❯</span></button>
+              </div>
+            </div>
+            <figcaption><p data-work-title class="font-bold">Klímák és segédanyagok</p><p data-work-description class="mt-1 text-sm text-slate-600">Kínálatunk a tatabányai üzletben</p></figcaption>
+          </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="rolunk" class="py-20 md:py-28">
+        <div class="container-site grid gap-12 lg:grid-cols-[.85fr_1.15fr] lg:gap-24">
+          <div><p class="eyebrow mb-4">Egyszerű együttműködés</p><h2 class="section-title">Az első egyeztetéstől a kész munkáig.</h2><p class="mt-5 leading-relaxed text-slate-600">Mondja el, milyen helyszínre és milyen feladatra keres megoldást. Ennek alapján egyeztetjük a megfelelő következő lépést.</p></div>
+          <ol class="divide-y divide-slate-200 border-t border-b border-slate-200">
+            <li class="flex gap-6 py-6"><span class="service-number pt-1">01</span><div><h3 class="text-lg font-bold">Kapcsolatfelvétel</h3><p class="mt-2 text-slate-600">Röviden átbeszéljük a helyszínt és az igényeket.</p></div></li>
+            <li class="flex gap-6 py-6"><span class="service-number pt-1">02</span><div><h3 class="text-lg font-bold">Műszaki egyeztetés</h3><p class="mt-2 text-slate-600">Pontosítjuk a kivitelezés vagy beszerzés feltételeit.</p></div></li>
+            <li class="flex gap-6 py-6"><span class="service-number pt-1">03</span><div><h3 class="text-lg font-bold">Megvalósítás</h3><p class="mt-2 text-slate-600">A megbeszélt megoldást az adott helyszínhez igazítva valósítjuk meg.</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="kapcsolat" class="bg-[#102b3c] py-12 text-white">
+        <div class="container-site grid gap-7 md:grid-cols-2 md:items-center">
+          <div><p class="eyebrow mb-3 !text-[#8bc9dc]">Lépjünk kapcsolatba</p><h2 class="section-title contact-title max-w-lg">Beszéljünk a következő projektről.</h2><p class="mt-4 max-w-lg leading-relaxed text-slate-300">Klímatelepítés, villanyszerelés vagy kereskedelmi beszerzés kapcsán írjon nekünk, és egyeztetjük a részleteket.</p></div>
+          <div class="rounded-2xl border border-white/20 bg-white/5 p-6">
+            <h3 class="text-xl font-bold">NGM-t Kft.</h3>
+            <address class="not-italic">
+              <p class="mt-3 text-sm text-slate-300">E-mail</p>
+              <a class="contact-link" href="mailto:ngmtkft@gmail.com">ngmtkft@gmail.com</a>
+              <div class="mt-3 grid gap-3 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+                <div><p class="text-sm text-slate-300">Nagy Tamás</p><a class="contact-link" href="tel:+36205446340">+36 20 544 6340</a></div>
+                <div><p class="text-sm text-slate-300">Maros Gábor</p><a class="contact-link" href="tel:+36306509675">+36 30 650 9675</a></div>
+              </div>
+              <p class="mt-3 text-sm text-slate-300">Cím</p>
+              <p class="mt-1 font-semibold">2800 Tatabánya, Búzavirág u. 8.</p>
+            </address>
+            <p class="mt-3 text-sm text-slate-300">Nyitvatartás</p>
+            <p class="mt-1 font-semibold">Hétfő–péntek: 7:30–16:00<br />Szombat–vasárnap: zárva</p>
+            <p class="mt-3 text-sm text-slate-300">Szolgáltatási terület</p>
+            <p class="mt-1 font-semibold">Komárom-Esztergom megye és környéke</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#0b2130] py-8 text-slate-300"><div class="container-site flex flex-col justify-between gap-3 text-sm sm:flex-row"><p>© <span id="year">2026</span> NGM-t Kft.</p><p>Klímatechnika · Villanyszerelés · Kereskedelem</p></div></footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
