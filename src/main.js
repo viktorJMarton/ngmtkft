@@ -1,4 +1,6 @@
 import './style.css';
+import './seo.css';
+import './analytics.js';
 import { ViewportObserver, listenToMediaQuery, observeSize, scrollCarousel, setupGalleryScrollMotion, setupReadableScroll } from './motion.js';
 
 setupReadableScroll();
@@ -67,7 +69,7 @@ if (gallery && carousel) {
   };
   const updateAutoplay = () => {
     window.clearInterval(timer);
-    if (visible && !document.hidden) {
+    if (visible && !document.hidden && !reducedMotion.matches && !document.body.classList.contains('motion-paused')) {
       timer = window.setInterval(() => showSlide(index + 1), 6000);
     }
   };
@@ -77,6 +79,7 @@ if (gallery && carousel) {
   document.addEventListener('visibilitychange', updateAutoplay);
   window.addEventListener('pageshow', updateAutoplay);
   listenToMediaQuery(reducedMotion, updateAutoplay);
+  document.addEventListener('motion-preference', updateAutoplay);
   const captions = [...carousel.querySelectorAll('.hero-caption')];
   observeSize(captions, () => {
     const tallest = Math.max(...captions.map(caption => caption.offsetHeight));
@@ -227,7 +230,7 @@ document.querySelectorAll('[data-work-gallery]').forEach(workGallery => {
       clone.setAttribute('aria-hidden', 'true');
       clone.removeAttribute('aria-label');
       clone.dataset.loopClone = 'true';
-      clone.querySelectorAll('img').forEach(image => { image.loading = 'eager'; });
+      clone.querySelectorAll('img').forEach(image => { image.loading = 'lazy'; });
       return clone;
     };
     if (looping) {
@@ -243,7 +246,7 @@ document.querySelectorAll('[data-work-gallery]').forEach(workGallery => {
     let visible = false;
     const updateAutoplay = () => {
       window.clearInterval(autoplayTimer);
-      if (visible && !document.hidden && slides.length > 1) {
+      if (visible && !document.hidden && slides.length > 1 && !reducedMotion.matches && !document.body.classList.contains('motion-paused')) {
         autoplayTimer = window.setInterval(() => move(1, false), 6000);
       }
     };
@@ -291,6 +294,7 @@ document.querySelectorAll('[data-work-gallery]').forEach(workGallery => {
     document.addEventListener('visibilitychange', updateAutoplay);
     window.addEventListener('pageshow', updateAutoplay);
     listenToMediaQuery(reducedMotion, updateAutoplay);
+    document.addEventListener('motion-preference', updateAutoplay);
     new ViewportObserver(([entry]) => {
       visible = entry.isIntersecting;
       updateAutoplay();

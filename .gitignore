@@ -1,5 +1,16 @@
 node_modules/
 dist/
+.baseline-dist/
+.consent-dist/
+artifacts/
+test-results/
+playwright-report/
+.env
+.env.*
+!.env.example
+public/images/generated/
+public/images/og-cover.jpg
+seo/images.generated.json
 .DS_Store
 CODEX-ATADAS.md
 README.md

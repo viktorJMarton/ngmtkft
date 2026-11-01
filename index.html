@@ -56,9 +56,9 @@
             </h1>
             <p class="mt-7 max-w-lg text-[1.05rem] leading-relaxed text-slate-600">Lakossági és ipari klímák telepítése, villanyszerelés, valamint klímák és szerelési segédanyagok kis- és nagykereskedelme egy helyen.</p>
             <p class="mt-4 font-semibold text-[#102b3c]">
-              <a class="location-link" href="https://www.google.com/maps/search/?api=1&amp;query=2800%20Tatab%C3%A1nya%2C%20B%C3%BAzavir%C3%A1g%20utca%208." target="_blank" rel="noopener noreferrer" aria-label="NGM-t Kft., 2800 Tatabánya, Búzavirág u. 8. – megnyitás Google Mapsen, új lapon">
+              <a class="location-link" href="{{MAP_URL}}" target="_blank" rel="noopener noreferrer" aria-label="NGM-t Kft., {{ADDRESS}} – megnyitás Google Mapsen, új lapon">
                 <svg class="shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-                <span>NGM-t Kft. · 2800 Tatabánya, Búzavirág u. 8.</span>
+                <span>NGM-t Kft. · {{ADDRESS}}</span>
               </a>
             </p>
             <div class="mt-8 flex flex-wrap gap-3">
@@ -67,7 +67,7 @@
             </div>
           </div>
           <div id="hero-gallery" class="relative" role="region" aria-roledescription="képkörhinta" aria-label="Klímaszerelési munkafotók">
-            <div id="hero-carousel" class="carousel hero-carousel w-full shadow-xl shadow-slate-900/10" aria-label="Automatikusan váltakozó munkafotók">
+            <div id="hero-carousel" class="carousel hero-carousel w-full shadow-xl shadow-slate-900/10" tabindex="0" aria-label="Automatikusan váltakozó munkafotók">
               <div class="carousel-item relative w-full" role="group" aria-roledescription="dia" aria-label="1 / 3">
                 <img class="photo hero-photo" src="./images/klimatelepites-emelokosarral.jpg" alt="Klímaszerelési munkák emelőkosárral egy társasház homlokzatán" width="1536" height="2048" fetchpriority="high" />
                 <div class="hero-caption absolute rounded-xl bg-white/95 shadow-lg backdrop-blur-sm">
@@ -92,7 +92,7 @@
             </div>
           </div>
         </div>
-        <section class="partner-strip mt-10 md:mt-14" aria-label="Partnereink márkái">
+        <section class="partner-strip mt-10 md:mt-14" tabindex="0" aria-label="Partnereink márkái">
         <div class="partner-track">
           <div class="partner-group">
             <img src="./images/partners/midea.svg" alt="Midea" width="240" height="100" loading="lazy" decoding="async" />
@@ -128,10 +128,10 @@
             <p class="services-intro max-w-sm leading-relaxed text-slate-600 italic">Lakossági és üzleti megrendelők, valamint viszonteladó partnerek részére.</p>
           </div>
           <div class="service-grid grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            <article class="card card-border service-card"><div class="card-body"><span class="service-number">01 / LAKOSSÁGI</span><h3 class="card-title mt-7 text-xl font-bold">Otthoni klímatelepítés</h3><p class="mt-3 leading-relaxed text-slate-600">Klímaberendezések elhelyezése és szakszerű telepítése lakásokba, családi házakba.</p></div></article>
-            <article class="card card-border service-card"><div class="card-body"><span class="service-number">02 / IPARI</span><h3 class="card-title mt-7 text-xl font-bold">Ipari klímatechnika</h3><p class="mt-3 leading-relaxed text-slate-600">Nagyobb terek és üzleti létesítmények klímatechnikai kivitelezése az adott feladathoz igazítva.</p></div></article>
-            <article class="card card-border service-card"><div class="card-body"><span class="service-number">03 / ELEKTROMOS</span><h3 class="card-title mt-7 text-xl font-bold">Villanyszerelés</h3><p class="mt-3 leading-relaxed text-slate-600">A telepítésekhez és egyéb műszaki igényekhez kapcsolódó villanyszerelési munkák.</p></div></article>
-            <article class="card card-border service-card"><div class="card-body"><span class="service-number">04 / KERESKEDELEM</span><h3 class="card-title mt-7 text-xl font-bold">Kis- és nagykereskedelem</h3><p class="mt-3 leading-relaxed text-slate-600">Klímaberendezések és szerelési segédanyagok beszerzése ügyfelek és szakmai partnerek számára.</p></div></article>
+            <article class="card card-border service-card"><div class="card-body"><span class="service-number">01 / LAKOSSÁGI</span><h3 class="card-title mt-7 text-xl font-bold"><a href="/klimatelepites-tatabanya/">Otthoni klímatelepítés</a></h3><p class="mt-3 leading-relaxed text-slate-600">Klímaberendezések elhelyezése és szakszerű telepítése lakásokba, családi házakba.</p></div></article>
+            <article class="card card-border service-card"><div class="card-body"><span class="service-number">02 / IPARI</span><h3 class="card-title mt-7 text-xl font-bold"><a href="/ipari-klimatechnika/">Ipari klímatechnika</a></h3><p class="mt-3 leading-relaxed text-slate-600">Nagyobb terek és üzleti létesítmények klímatechnikai kivitelezése az adott feladathoz igazítva.</p></div></article>
+            <article class="card card-border service-card"><div class="card-body"><span class="service-number">03 / ELEKTROMOS</span><h3 class="card-title mt-7 text-xl font-bold"><a href="/villanyszereles-tatabanya/">Villanyszerelés</a></h3><p class="mt-3 leading-relaxed text-slate-600">A telepítésekhez és egyéb műszaki igényekhez kapcsolódó villanyszerelési munkák.</p></div></article>
+            <article class="card card-border service-card"><div class="card-body"><span class="service-number">04 / KERESKEDELEM</span><h3 class="card-title mt-7 text-xl font-bold"><a href="/klima-kereskedelem/">Kis- és nagykereskedelem</a></h3><p class="mt-3 leading-relaxed text-slate-600">Klímaberendezések és szerelési segédanyagok beszerzése ügyfelek és szakmai partnerek számára.</p></div></article>
           </div>
         </div>
       </section>
@@ -312,23 +312,23 @@
             <h3 class="text-xl font-bold">NGM-t Kft.</h3>
             <address class="not-italic">
               <p class="mt-3 text-sm text-slate-300">E-mail</p>
-              <a class="contact-link" href="mailto:ngmtkft@gmail.com">ngmtkft@gmail.com</a>
+              <a class="contact-link" href="mailto:{{EMAIL}}">{{EMAIL}}</a>
               <div class="mt-3 grid gap-3 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
-                <div><p class="text-sm text-slate-300">Nagy Tamás</p><a class="contact-link" href="tel:+36205446340">+36 20 544 6340</a></div>
-                <div><p class="text-sm text-slate-300">Maros Gábor</p><a class="contact-link" href="tel:+36306509675">+36 30 650 9675</a></div>
+                <div><p class="text-sm text-slate-300">Nagy Tamás</p><a class="contact-link" href="tel:{{PHONE}}">{{PHONE_LABEL}}</a></div>
+                <div><p class="text-sm text-slate-300">Maros Gábor</p><a class="contact-link" href="tel:{{PHONE_SECONDARY}}">{{PHONE_SECONDARY_LABEL}}</a></div>
               </div>
               <p class="mt-3 text-sm text-slate-300">Cím</p>
-              <p class="mt-1 font-semibold">2800 Tatabánya, Búzavirág u. 8.</p>
+              <p class="mt-1 font-semibold">{{ADDRESS}}</p>
             </address>
             <p class="mt-3 text-sm text-slate-300">Nyitvatartás</p>
-            <p class="mt-1 font-semibold">Hétfő–péntek: 7:30–16:00<br />Szombat–vasárnap: zárva</p>
+            <p class="mt-1 font-semibold">{{HOURS}}<br />Szombat–vasárnap: zárva</p>
             <p class="mt-3 text-sm text-slate-300">Szolgáltatási terület</p>
-            <p class="mt-1 font-semibold">Komárom-Esztergom megye és környéke</p>
+            <p class="mt-1 font-semibold">{{AREA}}</p>
           </div>
         </div>
       </section>
     </main>
-    <footer class="bg-[#0b2130] py-8 text-slate-300"><div class="container-site flex flex-col justify-between gap-3 text-sm sm:flex-row"><p>© <span id="year">2026</span> NGM-t Kft.</p><p>Klímatechnika · Villanyszerelés · Kereskedelem</p></div></footer>
+    <footer class="bg-[#0b2130] py-8 text-slate-300"><div class="container-site flex flex-col justify-between gap-3 text-sm sm:flex-row"><p>© <span id="year">2026</span> NGM-t Kft.</p><p>Klímatechnika · Villanyszerelés · Kereskedelem</p></div><nav class="container-site mt-5 flex flex-wrap gap-5" aria-label="További oldalak"><a href="/kapcsolat/">Elérhetőségek és ajánlatkérés</a><a href="/adatvedelem/">Mérési és adatvédelmi tudnivalók</a></nav></footer>
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </body>
 </html>

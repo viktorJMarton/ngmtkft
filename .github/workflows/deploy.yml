@@ -1,7 +1,5 @@
-name: Deploy to GitHub Pages
+name: Manual legacy GitHub Pages deployment
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
@@ -12,6 +10,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   build:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,12 +19,28 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci
+      - run: npm test
       - run: npm run build
+      - run: npm run check:seo
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:browser
+        env:
+          CI: 'true'
+      - run: npm run test:consent
+        env:
+          CI: 'true'
+      - run: npm run build
+        env:
+          VITE_GA4_ID: ${{ vars.VITE_GA4_ID }}
+          VITE_GTM_ID: ${{ vars.VITE_GTM_ID }}
+          VITE_ANALYTICS_APPROVED: ${{ vars.VITE_ANALYTICS_APPROVED }}
+      - run: npm run check:seo
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist
   deploy:
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
