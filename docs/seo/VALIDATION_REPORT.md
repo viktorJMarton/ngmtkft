@@ -39,3 +39,9 @@ Eredeti artifact: `.baseline-dist`, változtatás előtti képernyőképek: `art
 - Éles új verzió, éles redirect/404/cache/DNS: nincs publikálás; az audit a régi éles állapotot írja le.
 - Képernyőolvasóval végzett manuális teszt, minden zoom/assistive technológia és jogi megfelelőség: nem tanúsított.
 - GitHub távoli CI állapota a PR/commit linkjén külön ellenőrizendő; a helyi PASS nem azonos a távoli CI PASS-szal.
+
+## GitHub átadás
+
+Implementációs commit: `9d566ddad9a6680c90156dadc7cf911626604b75`, feltöltve a `feature/enterprise-seo-optimization` ágra. Draft PR: [#1](https://github.com/viktorJMarton/ngmtkft/pull/1). Az alapág az implementáció szülője; nincs eltérés miatti merge-konfliktus. Main nem lett módosítva és deployment nem történt.
+
+A [távoli CI-futás](https://github.com/viktorJMarton/ngmtkft/actions/runs/41314820779) **nem indított tesztet**: a job runner_id=0, üres lépéslistával leállt. A GitHub check annotációjának pontos üzenete: “The job was not started because your account is locked due to a billing issue.” Ez fiókszintű külső blokkolás; nem jelölhető sikeres CI-ként, és a helyi PASS nem helyettesíti. Fióktulajdonosi rendezés után a sikertelen job újrafuttatása szükséges, a PR addig draft marad.

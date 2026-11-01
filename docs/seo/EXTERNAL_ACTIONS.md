@@ -1,5 +1,9 @@
 # Tulajdonosi hozzáférést igénylő teendők
 
+## 0. GitHub Actions fiókblokkolás
+
+A megnyitott [PR #1](https://github.com/viktorJMarton/ngmtkft/pull/1) távoli CI-je a GitHub check szerint számlázási okból zárolt fiók miatt nem indul el. A fiók tulajdonosa ellenőrizze a GitHub Settings → Billing and licensing felületét és a jelzett fizetési/fiókproblémát; ha ott nem oldható fel, GitHub Support szükséges. Fizetési adatot a repositoryba vagy chatbe ne másolj. A feloldás után a [sikertelen Actions-futás](https://github.com/viktorJMarton/ngmtkft/actions/runs/41314820779) Re-run failed jobs műveletével futtasd le a minőségkapukat. Nem próbáltuk megkerülni a fiókzárolást vagy másik runnerrel helyettesíteni a jogosultságot.
+
 ## 1. Éles hosting és domain (publikálás előtt)
 
 Az auditban HTTP, www és nem létező URL is 200 volt, Cloudflare fejlécekkel. Először azonosítsd a tényleges origint: Cloudflare Pages, GitHub Pages proxyval vagy más host. Ne változtass vaktában DNS-t.
