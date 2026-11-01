@@ -1,0 +1,14 @@
+.service-detail { max-width: 72rem; }
+.motion-paused .partner-track, .motion-paused .location-link svg { animation-play-state: paused; }
+.service-detail > p, .service-detail section { max-width: 48rem; }
+.service-detail a, .consent-dialog a { text-decoration: underline; text-underline-offset: .2em; }
+.service-detail li { margin-top: .7rem; }
+.privacy-settings { margin: 1rem max(1rem, calc((100vw - 1280px)/2)); padding: .6rem; text-decoration: underline; cursor: pointer; }
+.consent-dialog { max-width: min(38rem, calc(100vw - 2rem)); max-height: 90vh; overflow: auto; margin: auto; padding: 1.5rem; border: 1px solid #64748b; border-radius: 1rem; background: white; color: #102b3c; }
+.consent-dialog::backdrop { background: #102b3c99; }
+.consent-dialog h2 { font-size: 1.5rem; font-weight: 700; }
+.consent-dialog p { margin: 1rem 0; }
+.consent-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+.consent-dialog button { padding: .75rem; border: 1px solid #102b3c; border-radius: .5rem; cursor: pointer; }
+.consent-dialog form { margin-top: 1rem; }
+.service-detail :focus-visible, .consent-dialog :focus-visible, .privacy-settings:focus-visible { outline: 3px solid #007a9e; outline-offset: 4px; }
