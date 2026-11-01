@@ -1,5 +1,22 @@
 # Teljesítményjelentés
 
+## Következő mobiloptimalizálás – három összehasonlító futás
+
+2026. november 1., a helyi SEO folytatásakor: az előző éles `6d20937` build és az új AVIF-es build három-három mobil Lighthouse 13.6.0 futása ugyanazon Windows/Chrome 156 környezetben, felváltva, sorosan történt. A táblázat a három futás mediánja, nem terepadat.
+
+| Mérték | Előző éles változat | AVIF + meglévő munkafotók |
+|---|---:|---:|
+| Mobil performance | 78 | 82 |
+| Mobil LCP | 6,159 s | 4,810 s |
+| TBT | 16 ms | 9 ms |
+| CLS | 0 | 0 |
+
+LCP futásonként, ms: előtte 6235 / 6084 / 6159, utána 4810 / 4659 / 4810. Mérési fájlok: `artifacts/local-seo-performance/before-*.json`, `after-*.json`. A 800 px-es első hero WebP 258 464 bájt, az AVIF 160 053 bájt (kb. 38% csökkenés). A három nyitókép AVIF-forrást kapott; a meglévő WebP/JPEG fallback megmaradt. A képkeret és a képkivágás nem változott. A `<picture>` konténer `display: contents`, így a képek továbbra is az eredeti carousel-elrendezésben vesznek részt.
+
+Hat unit/workflow/Worker teszt, nyolc böngészőteszt, SEO/budget és két consent-mód ellenőrzése sikeres. A böngészőteszt külön igazolja az AVIF választását és a fallback betöltését azonos képmérettel. A vizsgált főoldali x/y/méret/betű/szín/háttér tulajdonságok öt szélességen azonosak az előző éles változattal. A szolgáltatásoldalakra saját, korábban már publikált referenciaképek kerültek; nem készült kitalált esettanulmány.
+
+**A mobil LCP továbbra is a 2,5 másodperces cél felett van.** Nincs új terepi INP- vagy 75. percentilis adat. A következő bekezdések a korábbi, első implementáció mérési történetét tartalmazzák.
+
 2026. november 1. Helyi statikus HTTP-kiszolgáló, Windows, Chrome 156, Lighthouse 13.6.0, standard mobile/desktop preset és szimulált throttling. A before/after mérések sorosan futottak, azonos gépen. Ezek egyszeri laborfutások, nem több futás mediánjai, nem éles hálózati mérések és nem terepi percentilisek. A pontszámok önmagukban nem üzleti vagy rangsorolási célok.
 
 | Mérték | Mobil előtte | Mobil utána | Desktop előtte | Desktop utána |

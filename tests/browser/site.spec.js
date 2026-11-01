@@ -45,3 +45,13 @@ test('reduced motion stops autoplay while manual controls still work',async({pag
  const title=await gallery.locator('[data-work-title]').textContent();await gallery.locator('[data-work-next]').click();
  await expect(gallery.locator('[data-work-title]')).not.toHaveText(title);
 });
+test('hero uses AVIF and retains a working fallback without changing geometry',async({page})=>{
+ await page.goto('/');
+ const hero=page.locator('#hero-carousel img').first();await hero.evaluate(img=>img.decode());
+ expect(await hero.evaluate(img=>img.currentSrc)).toMatch(/\.avif$/);
+ const before=await hero.boundingBox();
+ await page.locator('#hero-carousel source').evaluateAll(sources=>sources.forEach(source=>source.type='image/not-supported'));
+ await hero.evaluate(img=>img.decode());
+ expect(await hero.evaluate(img=>img.currentSrc)).toMatch(/\.(webp|jpg)$/);
+ const after=await hero.boundingBox();expect(after.width).toBe(before.width);expect(after.height).toBe(before.height);
+});
