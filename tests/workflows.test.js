@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { parse } from 'yaml';
 test('workflows parse and feature validation cannot deploy',()=>{
  const deploy=parse(readFileSync('.github/workflows/deploy.yml','utf8'));
- assert.deepEqual(deploy.on.push.branches,['main']);
+ assert(!('push' in deploy.on));assert('workflow_dispatch' in deploy.on);
  assert.equal(deploy.jobs.build.if,"github.ref == 'refs/heads/main'");
  assert.equal(deploy.jobs.deploy.if,"github.ref == 'refs/heads/main'");
  const qa=parse(readFileSync('.github/workflows/seo.yml','utf8'));

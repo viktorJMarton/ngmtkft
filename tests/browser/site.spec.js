@@ -32,6 +32,8 @@ for(const width of [360,390,768,1280,1920])test(`layout ${width}px and no tracki
  await page.goto('/');
  for(let y=0;y<await page.evaluate(()=>document.body.scrollHeight);y+=700) {await page.evaluate(y=>scrollTo(0,y),y);await page.waitForTimeout(50);}
  await page.evaluate(()=>scrollTo(0,0));
+ await page.locator('img').evaluateAll(images=>images.forEach(img=>img.loading='eager'));
+ await page.waitForFunction(()=>[...document.images].every(img=>img.complete && img.naturalWidth>0));
  await page.screenshot({path:testInfo.outputPath(`home-${width}.png`),fullPage:true});
 });
 test('reduced motion stops autoplay while manual controls still work',async({page})=>{

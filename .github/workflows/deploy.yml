@@ -1,7 +1,5 @@
-name: Deploy to GitHub Pages
+name: Manual legacy GitHub Pages deployment
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read

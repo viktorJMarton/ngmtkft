@@ -1,6 +1,6 @@
 # NGM-t Kft. SEO – üzemeltetési útmutató
 
-A változtatások nem lettek élesítve. A feature ágat a tesztek és tartalmi felülvizsgálat után lehet beolvasztani. Az indexelés vagy helyezés nem garantálható.
+A kiadási cél a meglévő Cloudflare Worker, nem új GitHub Pages-oldal. Publikálás előtt a tesztek és a megjelenés ellenőrzése szükséges; a kiadási lépések és a visszaállítás a [Cloudflare útmutatóban](CLOUDFLARE_DEPLOYMENT.md) szerepelnek. Az indexelés vagy helyezés nem garantálható. A baseline/validációs jelentések a kiadás előtti állapotot is dokumentálják, ezért a történeti „nem élesített” megállapítások nem aktuális deployment-státuszt jelentenek.
 
 ## Helyi megtekintés és ellenőrzés
 
@@ -35,3 +35,4 @@ Buildelt előnézet: `npm run build`, majd `node scripts/serve.mjs`; címe `http
 - [Külső aktiválás és dashboard](EXTERNAL_ACTIONS.md)
 - [Ellenőrzési és felülvizsgálati jelentés](VALIDATION_REPORT.md)
 - [Teljesítménymérések](PERFORMANCE_REPORT.md)
+- [Cloudflare publikálás és visszaállítás](CLOUDFLARE_DEPLOYMENT.md)
