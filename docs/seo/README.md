@@ -36,3 +36,4 @@ Buildelt előnézet: `npm run build`, majd `node scripts/serve.mjs`; címe `http
 - [Ellenőrzési és felülvizsgálati jelentés](VALIDATION_REPORT.md)
 - [Teljesítménymérések](PERFORMANCE_REPORT.md)
 - [Cloudflare publikálás és visszaállítás](CLOUDFLARE_DEPLOYMENT.md)
+- [Előkészített helyi SEO-szövegek és még szükséges valós adatok](LOCAL_BUSINESS_ACTIONS.md)

@@ -3,11 +3,12 @@ import { readdir, readFile, mkdir, writeFile, unlink } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { join, resolve, sep } from 'node:path';
 const inventory=[]; const manifest={}; const variants=new Map();
+const heroImages=new Set(['klimatelepites-emelokosarral.jpg','klimaszereles-szerszam.jpg','klima-erkely.jpg']);
 await mkdir('public/images/generated',{recursive:true});
 const generated=resolve('public/images/generated');
 if (!generated.startsWith(resolve('public/images')+sep)) throw new Error('Invalid generated image directory');
 for(const entry of await readdir(generated,{withFileTypes:true})) {
- if(entry.isFile() && /^[a-f0-9]{16}-\d+\.(webp|jpg)$/.test(entry.name)) await unlink(join(generated,entry.name));
+ if(entry.isFile() && /^[a-f0-9]{16}-\d+\.(webp|jpg|avif)$/.test(entry.name)) await unlink(join(generated,entry.name));
 }
 await mkdir('artifacts',{recursive:true});
 async function walk(dir) {
@@ -33,6 +34,15 @@ async function walk(dir) {
   }
   const key='/'+path.replaceAll('\\','/').replace(/^public\//,'');
   manifest[key]={width:meta.width,height:meta.height,outputs};
+  if(heroImages.has(entry.name)) {
+   const avifOutputs=[];
+   for(const output of outputs) {
+    const result=await sharp(bytes).rotate().resize({width:output.width,withoutEnlargement:true}).avif({quality:60,effort:4}).toBuffer();
+    const file=`/images/generated/${hash.slice(0,16)}-${output.width}.avif`;
+    await writeFile('public'+file,result);avifOutputs.push({file,width:output.width,bytes:result.length});
+   }
+   manifest[key].avifOutputs=avifOutputs;
+  }
   inventory.push({path,bytes:bytes.length,width:meta.width,height:meta.height,hash,outputs});
  }
 }
